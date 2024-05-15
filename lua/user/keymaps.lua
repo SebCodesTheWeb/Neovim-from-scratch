@@ -35,11 +35,6 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Insert --
--- Press jk fast to exit insert mode 
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
-
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv^", opts)
@@ -56,6 +51,12 @@ keymap("x", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "K", ":m '<-2<CR>gv=gv", opts)
 keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+
+--[[Toggleterm shortcuts]]
+keymap('n', '<C-g>', ':lua _LAZYGIT_TOGGLE()<CR>', { noremap = true, silent = true })
+keymap('n', '<C-n>', ':lua _NODE_TOGGLE()<CR>', { noremap = true, silent = true })
+
+keymap('n', '<D-;>', ':Telescope projects<CR>', { noremap = true, silent = true })
 
 -- Terminal --
 -- Better terminal navigation
