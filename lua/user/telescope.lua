@@ -7,7 +7,12 @@ local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
-
+    file_ignore_patterns = {"node_modules"},
+    layout_config = {
+      prompt_position = "top",
+    },
+    sorting_strategy = "ascending",
+    layout_strategy = "horizontal",
     prompt_prefix = " ",
     selection_caret = " ",
       path_display = { "absolute" },
