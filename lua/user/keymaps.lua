@@ -60,6 +60,7 @@ keymap('n', '<D-F>', ':Telescope live_grep<CR>', { noremap = true, silent = true
 
 keymap('n', '<D-;>', ':Telescope projects<CR>', { noremap = true, silent = true })
 keymap('n', '<D-s>', ':w<CR>', { noremap = true, silent = true })
+keymap('i', '<D-s>', '<ESC> :w<CR>', { noremap = true, silent = true })
 
 -- Terminal --
 -- Better terminal navigation
