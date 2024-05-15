@@ -1,5 +1,5 @@
-local M = {
-}
+local M = {}
+
 function M.config()
   local treesitter = require "nvim-treesitter"
   local configs = require "nvim-treesitter.configs"
@@ -13,6 +13,7 @@ function M.config()
     highlight = {
       enable = true,       -- false will disable the whole extension
       disable = { "css" }, -- list of language that will be disabled
+      additional_vim_regex_highlighting = false,
     },
     autopairs = {
       enable = true,
@@ -24,6 +25,14 @@ function M.config()
       enable_autocmd = false,
     },
   }
+
+  -- Ensure that highlighting is enabled
+  vim.cmd [[
+    augroup treesitter_config
+      autocmd!
+      autocmd FileType * TSBufEnable highlight
+    augroup END
+  ]]
 end
 
 return M
