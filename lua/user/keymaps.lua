@@ -55,8 +55,11 @@ keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 --[[Toggleterm shortcuts]]
 keymap('n', '<C-g>', ':lua _LAZYGIT_TOGGLE()<CR>', { noremap = true, silent = true })
 keymap('n', '<C-n>', ':lua _NODE_TOGGLE()<CR>', { noremap = true, silent = true })
+keymap('n', '<D-p>', ':Telescope find_files<CR>', { noremap = true, silent = true })
+keymap('n', '<D-F>', ':Telescope live_grep<CR>', { noremap = true, silent = true })
 
 keymap('n', '<D-;>', ':Telescope projects<CR>', { noremap = true, silent = true })
+keymap('n', '<D-s>', ':w<CR>', { noremap = true, silent = true })
 
 -- Terminal --
 -- Better terminal navigation
