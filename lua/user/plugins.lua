@@ -57,6 +57,7 @@ return packer.startup(function(use)
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
 	use {"folke/which-key.nvim"}
   use {"navarasu/onedark.nvim"}
+  use {"folke/tokyonight.nvim"}
 
 	-- Colorschemes
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
