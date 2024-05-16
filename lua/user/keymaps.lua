@@ -57,6 +57,8 @@ keymap('n', '<C-g>', ':lua _LAZYGIT_TOGGLE()<CR>', { noremap = true, silent = tr
 keymap('n', '<C-n>', ':lua _NODE_TOGGLE()<CR>', { noremap = true, silent = true })
 keymap('n', '<D-p>', ':Telescope find_files<CR>', { noremap = true, silent = true })
 keymap('n', '<D-f>', ':Telescope live_grep<CR>', { noremap = true, silent = true })
+keymap('n', '<D-P>', ':cd /Users/sebastiandelgado/Documents/Mediatool | Telescope find_files<CR>', opts)
+keymap('n', '<D-F>', ':cd /Users/sebastiandelgado/Documents/Mediatool | Telescope live_grep<CR>', opts)
 keymap('n', '<D-w>', ':bp|bd #<CR>', { noremap = true, silent = true })
 keymap('n', '<D-t>', ':tabnew % <CR>', { noremap = true, silent = true })
 
