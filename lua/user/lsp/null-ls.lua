@@ -17,3 +17,10 @@ null_ls.setup({
     -- diagnostics.flake8
 	},
 })
+
+vim.cmd([[
+    augroup FormatAutogroup
+        autocmd!
+        autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.html,*.json,*.md lua vim.lsp.buf.format({ async = true })
+    augroup END
+]])
