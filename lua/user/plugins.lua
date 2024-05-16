@@ -61,7 +61,7 @@ return packer.startup(function(use)
   use {"rebelot/kanagawa.nvim"}
   use {"navarasu/onedark.nvim"}
   use {"Mofiqul/vscode.nvim"}
-
+  use {"dstein64/nvim-scrollview"}
 
 
 
