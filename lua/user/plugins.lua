@@ -85,6 +85,7 @@ return packer.startup(function(use)
 	use { "neovim/nvim-lspconfig" } -- enable LSP
   use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"} -- simple to use language server installer
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
+  use {"jose-elias-alvarez/null-ls.nvim"}
 
 	-- Telescope
 	use { "nvim-telescope/telescope.nvim"}
