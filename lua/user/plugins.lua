@@ -59,15 +59,8 @@ return packer.startup(function(use)
   use {"folke/tokyonight.nvim"}
   use {"catppuccin/nvim"}
   use {"rebelot/kanagawa.nvim"}
-  use {"navarasu/onedark.nvim"}
   use {"Mofiqul/vscode.nvim"}
   use {"dstein64/nvim-scrollview"}
-
-
-
-
-	-- Colorschemes
-  use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
 
 	-- Cmp 
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
