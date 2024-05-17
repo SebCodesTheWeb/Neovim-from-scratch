@@ -66,6 +66,8 @@ keymap('n', '<D-;>', ':Telescope projects<CR>', { noremap = true, silent = true 
 keymap('n', '<D-s>', ':w<CR>', { noremap = true, silent = true })
 keymap('i', '<D-s>', '<ESC> :w<CR>', { noremap = true, silent = true })
 keymap('n', '<D-J>', ':ToggleTermToggleAll<CR>', opts)
+keymap('n', '<D-b>', ':NvimTreeToggle<CR>', opts)
+keymap('i', '<D-b>', ':NvimTreeToggle<CR>', opts)
 
 -- Terminal --
 -- Better terminal navigation
