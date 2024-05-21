@@ -62,6 +62,12 @@ keymap('n', '<D-F>', ':cd /Users/sebastiandelgado/Documents/Mediatool | Telescop
 keymap('n', '<D-w>', ':bp|bd #<CR>', { noremap = true, silent = true })
 keymap('n', '<D-t>', ':tabnew % <CR>', { noremap = true, silent = true })
 
+keymap('n', '<C-p>', ':Telescope find_files<CR>', { noremap = true, silent = true })
+keymap('n', '<C-f>', ':Telescope live_grep<CR>', { noremap = true, silent = true })
+keymap('n', '<C-P>', ':cd /Users/sebastiandelgado/Documents/Mediatool | Telescope find_files<CR>', opts)
+keymap('n', '<C-F>', ':cd /Users/sebastiandelgado/Documents/Mediatool | Telescope live_grep<CR>', opts)
+keymap('n', '<C-t>', ':tabnew % <CR>', { noremap = true, silent = true })
+
 keymap('n', '<D-;>', ':Telescope projects<CR>', { noremap = true, silent = true })
 keymap('n', '<D-s>', ':w<CR>', { noremap = true, silent = true })
 keymap('i', '<D-s>', '<ESC> :w<CR>', { noremap = true, silent = true })
