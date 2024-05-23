@@ -69,11 +69,18 @@ keymap('n', '<C-F>', ':cd /Users/sebastiandelgado/Documents/Mediatool | Telescop
 keymap('n', '<C-t>', ':tabnew % <CR>', { noremap = true, silent = true })
 
 keymap('n', '<D-;>', ':Telescope projects<CR>', { noremap = true, silent = true })
+keymap('n', '<leader>r', ':Telescope oldfiles<CR>', { noremap = true, silent = true })
 keymap('n', '<D-s>', ':w<CR>', { noremap = true, silent = true })
 keymap('i', '<D-s>', '<ESC> :w<CR>', { noremap = true, silent = true })
 keymap('n', '<D-J>', ':ToggleTermToggleAll<CR>', opts)
 keymap('n', '<D-b>', ':NvimTreeToggle<CR>', opts)
 keymap('i', '<D-b>', ':NvimTreeToggle<CR>', opts)
+
+keymap('n', '<C-;>', ':Telescope projects<CR>', { noremap = true, silent = true })
+keymap('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+keymap('i', '<C-s>', '<ESC> :w<CR>', { noremap = true, silent = true })
+keymap('n', '<C-b>', ':NvimTreeToggle<CR>', opts)
+keymap('i', '<C-b>', ':NvimTreeToggle<CR>', opts)
 
 -- Terminal --
 -- Better terminal navigation
