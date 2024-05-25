@@ -4,7 +4,8 @@ local servers = {
 	"pyright",
 	"jsonls",
   "prettier",
-  "eslint"
+  "eslint",
+  "rust_analyzer"
 }
 
 local settings = {

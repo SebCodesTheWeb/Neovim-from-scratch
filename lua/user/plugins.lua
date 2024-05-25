@@ -62,6 +62,7 @@ return packer.startup(function(use)
   use {"rebelot/kanagawa.nvim"}
   use {"Mofiqul/vscode.nvim"}
   use {"dstein64/nvim-scrollview"}
+  use {"rust-lang/rust.vim"}
 
 	-- Cmp 
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin

@@ -32,4 +32,4 @@ vim.cmd([[
 -- Optional: keybinding to save without formatting
 vim.api.nvim_set_keymap('n', '<leader>s', ':NoFormatWrite<CR>', { noremap = true, silent = true })
 
-
+vim.g.rustfmt_autosave = 1
