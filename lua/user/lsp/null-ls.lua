@@ -24,3 +24,12 @@ vim.cmd([[
     augroup END
 ]])
 
+-- Custom command to save without formatting
+vim.cmd([[
+    command! NoFormatWrite execute 'autocmd! FormatAutogroup' | write | execute 'source % | augroup FormatAutogroup | autocmd! | autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.html,*.json,*.md lua vim.lsp.buf.format({ async = true })'
+]])
+
+-- Optional: keybinding to save without formatting
+vim.api.nvim_set_keymap('n', '<leader>s', ':NoFormatWrite<CR>', { noremap = true, silent = true })
+
+
