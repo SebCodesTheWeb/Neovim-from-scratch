@@ -49,3 +49,7 @@ vim.opt.formatoptions:remove({ "c", "r", "o" })        -- don't insert the curre
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
 
 vim.g.neovide_transparency = 0.95
+
+vim.g['prettier#config#semi'] = 'false'
+vim.g['prettier#config#single_quote'] = 'true'
+vim.g['prettier#config#jsx_single_quote'] = 'true'
